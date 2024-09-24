@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class RegisterPage extends BasePage{
 
-    RegisterPage(WebDriver driver){
+    public RegisterPage(WebDriver driver){
         super(driver);
     }
 
