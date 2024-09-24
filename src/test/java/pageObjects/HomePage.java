@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class HomePage extends BasePage{
 
-    HomePage(WebDriver driver) {
+    public HomePage(WebDriver driver) {
         super(driver); // initialising Base Class Constructor
     }
 
