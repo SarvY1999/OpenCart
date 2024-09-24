@@ -19,7 +19,7 @@ public class RegisterPage extends BasePage{
     By btnSubmit = By.cssSelector("input[type='submit']");
     By btnContinue = By.cssSelector("a.btn-primary");
     By chkBoxPrivacyPolicy = By.cssSelector("input[name='agree']");
-    By msgAccCreation = By.cssSelector("div#content");
+    By msgAccCreation = By.cssSelector("div#content h1");
 
     //Action Methods
 
