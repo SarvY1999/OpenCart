@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <test name="Test1">
+        <parameter name="browser" value="Edge"></parameter>
+        <classes>
+            <class name="testCases.TC_AccountRegistrationTest"></class>
+        </classes>
+    </test>
+    <test name="Test2">
+        <parameter name="browser" value="Chrome"></parameter>
+        <classes>
+            <class name="testCases.TC_AccountRegistrationTest"></class>
+        </classes>
+    </test>
+
+
+</suite>
