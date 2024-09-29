@@ -12,6 +12,8 @@ public class HomePage extends BasePage{
     // Locators
     By lnkMyAccount = By.cssSelector("li.dropdown span.hidden-sm");
     By lnkRegister = By.xpath("//ul[@class='dropdown-menu dropdown-menu-right']//a[text()='Register']");
+    By lnkLogin = By.xpath("//ul[@class='dropdown-menu dropdown-menu-right']//a[text()='Login']");
+
 
     // Action Method
     public void clickMyAccount(){
@@ -20,5 +22,9 @@ public class HomePage extends BasePage{
 
     public void clickRegister(){
         driver.findElement(lnkRegister).click();
+    }
+
+    public void clickLogin(){
+        driver.findElement(lnkLogin).click();
     }
 }
