@@ -22,12 +22,12 @@ public class TC_AccountRegistrationTest extends BaseClass{
 
         RegisterPage rp = new RegisterPage(driver);
         logger.info("***Providing Details***");
-        rp.setTxtFirstName("John");
-        rp.setTxtLastName("Doe");
-        rp.setTxtEmail(""+randomStringGeneration()+"@gmail.com");
-        rp.setTxtTelephone("1122334455");
-        rp.setTxtPassword("john@123");
-        rp.setTxtCnfPassword("john@123");
+        rp.setTxtFirstName(p.getProperty("Fname"));
+        rp.setTxtLastName(p.getProperty("Lname"));
+        rp.setTxtEmail(p.getProperty("Email"));
+        rp.setTxtTelephone(p.getProperty("Telephone"));
+        rp.setTxtPassword(p.getProperty("Password"));
+        rp.setTxtCnfPassword(p.getProperty("Password"));
         rp.setChkBoxPrivacyPolicy();
         rp.clickBtnContinue();
         String cnfMsg = rp.getSuccessMsg();
