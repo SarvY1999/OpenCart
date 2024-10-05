@@ -26,7 +26,7 @@ public class BaseClass {
     public void setUp(String browser) throws IOException {
 
         // Reading file
-        FileReader file = new FileReader(".src//test//resources//config.properties"); // reading file
+        FileReader file = new FileReader("src//test//resources//config.properties"); // reading file
         p = new Properties();  // Creating object of Properties
         p.load(file);  // Loading file
 
