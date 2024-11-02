@@ -21,10 +21,11 @@ public class TC_AccountRegistrationTest extends BaseClass{
         hp.clickRegister();
 
         RegisterPage rp = new RegisterPage(driver);
+        String randString = randomStringGeneration();
         logger.info("***Providing Details***");
         rp.setTxtFirstName(p.getProperty("Fname"));
         rp.setTxtLastName(p.getProperty("Lname"));
-        rp.setTxtEmail(p.getProperty("Email"));
+        rp.setTxtEmail(p.getProperty("Email")+randString+"@gmail.com");
         rp.setTxtTelephone(p.getProperty("Telephone"));
         rp.setTxtPassword(p.getProperty("Password"));
         rp.setTxtCnfPassword(p.getProperty("Password"));
